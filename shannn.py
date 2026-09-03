@@ -42,3 +42,24 @@ print("-" * 64)
 print(f"Total amount:   {total:.2f}")
 print(f"Discount ({discount_rate * 100:.0f}%): {discount:.2f}")
 print(f"Final amount:    {final_amount:.2f}")
+
+most_expensive = max(products, key=lambda product: product["price"])
+cheapest = min(products, key=lambda product: product["price"])
+highest_quantity = max(products, key=lambda product: product["quantity"])
+
+print("\nProduct Summary")
+print(
+	"Most expensive product: "
+	f"{most_expensive['name']} (ID: {most_expensive['id']}, "
+	f"Price: {most_expensive['price']:.2f})"
+)
+print(
+	"Cheapest product: "
+	f"{cheapest['name']} (ID: {cheapest['id']}, "
+	f"Price: {cheapest['price']:.2f})"
+)
+print(
+	"Highest quantity purchased: "
+	f"{highest_quantity['name']} (ID: {highest_quantity['id']}, "
+	f"Quantity: {highest_quantity['quantity']})"
+)
