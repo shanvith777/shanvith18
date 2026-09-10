@@ -1,0 +1,9 @@
+a = float(input("enter the first number"))
+b =float(input("enter the second number"))
+
+if a>b:
+print("first number is greater than the second number")
+elif a<b:
+print("second number is greater than first number")
+else:
+print("both numbers are equal")
