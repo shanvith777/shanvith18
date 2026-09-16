@@ -1,8 +1,14 @@
-total_classes = int(input("Enter the total number of classes conducted: "))
-classes_attended = int(input("Enter the number of classes attended: "))
+marks = float(input("Enter the student's marks: "))
 
-if total_classes > 0:
-	attendance_percentage = (classes_attended / total_classes) * 100
-	print(f"Attendance percentage: {attendance_percentage:.2f}%")
+if marks >= 90:
+	grade = "A"
+elif marks >= 80:
+	grade = "B"
+elif marks >= 70:
+	grade = "C"
+elif marks >= 60:
+	grade = "D"
 else:
-	print("Total classes must be greater than zero.")
+	grade = "F"
+
+print(f"The student's grade is: {grade}")
