@@ -1,7 +1,8 @@
-num1 =float(input("enter the first number"))
-num2 =float(input("enter the second number"))
-num3 =float(input("enter the third number"))
+total_classes = int(input("Enter the total number of classes conducted: "))
+classes_attended = int(input("Enter the number of classes attended: "))
 
-total = num1 + num2 + num3
-
-print("the sum of the three numbers is :", total)
+if total_classes > 0:
+	attendance_percentage = (classes_attended / total_classes) * 100
+	print(f"Attendance percentage: {attendance_percentage:.2f}%")
+else:
+	print("Total classes must be greater than zero.")
