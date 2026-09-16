@@ -1,8 +1,9 @@
-a = float(input("Enter first number: "))
-b = float(input("Enter second number: "))
-if a > b:
-    print("first number is greater than second number" )
-elif a<b:
-    print("first number is less than second number")
+total_classes = int(input("Enter the total number of classes conducted: "))
+classes_attended = int(input("Enter the number of classes attended: "))
+
+if total_classes > 0:
+    attendance_percentage = (classes_attended / total_classes) * 100
+    print(f"Attendance percentage: {attendance_percentage:.2f}%")
 else:
-    print("both numbers equal" )
+    print("Total classes must be greater than zero.")
+
