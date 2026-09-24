@@ -1,0 +1,11 @@
+name=input("Enter student name")
+rollnumber = input("enter roll number")
+course =input("enter course")
+marks =float(input("total marks"))
+
+print("\n=========== STUDENTS REPORT=======")
+print(f"student name : {name}")
+print(f"rollnumber   : {rollnumber}")
+print(f"course       : {course}")
+print(f"marks        : {marks}")
+print("==================================== ")
